@@ -1,0 +1,16 @@
+.navbar-brand {
+	font-size: 22px;
+}
+
+#second-banner {
+     background-position: 0px 0px;
+}
+
+#third-banner {
+     background-position: 0px 0px;
+}
+
+.map {
+	width: 80%;
+	height: 250px;
+}

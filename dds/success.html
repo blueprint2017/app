@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drillers Driving School | Terms of Service</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Google Fonts: Lato -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<!-- Mobile CSS -->
+	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/mobile.css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- This logo looks kinda funky. Maybe text is just better.
+				<a class="navbar-brand" href="index.html"><img src="logo.gif"></img></a> 
+				-->
+				<a class="navbar-brand" href="index.html"><b id="brandname">Drillers Driving School</b></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="tab" href="index.html">Home</a>
+					</li>
+                    <li>
+                        <a class="tab" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="dropdown">
+						<a class="tab" href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons and Pricing <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="in-class.html">In Class Driver's Education</a>
+							</li>
+							<li>
+								<a href="online.html">Online Driver's Education</a>
+							</li>
+							<li>
+								<a href="behind-the-wheel.html">Behind the Wheel Training</a>
+							</li>
+							<li>
+								<a href="prices.html">Prices</a>
+							</li>
+						</ul>
+                    <li>
+                        <a class="tab" href="about.html">About Us</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="tab" href="#" class="dropdown-toggle" data-toggle="dropdown">Other&nbsp;<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="FAQ.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="tos.html">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2 class="green">Your purchase from Drillers Driving School was successful!</h2>
+                <h3 style="border-bottom: 1px solid; padding-bottom: 0.5em">Please fill out the form below so we can add you to our files:</h3>
+                <form name="sentMessage" id="successForm" novalidate action="success_form.php">
+					<h3>Student Info</h3>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>First Name: </label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your first name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Middle Name: </label>
+                            <input type="text" class="form-control" id="midname" required data-validation-required-message="Please enter your middle name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Last Name: </label>
+                            <input type="text" class="form-control" id="lastname" required data-validation-required-message="Please enter your last name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Streeet Address: </label>
+                            <input type="text" class="form-control" id="address" required data-validation-required-message="Please enter your street address.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>City: </label>
+                            <input type="text" class="form-control" id="city" required data-validation-required-message="Please enter the current city you live in.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>State:</label>
+                            <input type="text" class="form-control" id="state" required data-validation-required-message="Please enter the current state you live in.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>ZIP Code:</label>
+                            <input type="number" class="form-control" id="zip" required data-validation-required-message="Please enter your 9 digit ZIP code.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Date of Birth ( ## / ## / #### ):</label>
+                            <input type="date" class="form-control" id="dob" required data-validation-required-message="Please enter your date of birth.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+					<h3>Parent/Guardian Info</h3>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Parent/Guardian's First Name: </label>
+                            <input type="text" class="form-control" id="parentName" required data-validation-required-message="Please enter your parent/guardian's name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Parent/Guardian's Last Name: </label>
+                            <input type="text" class="form-control" id="parentLastName" required data-validation-required-message="Please enter your parent/guardian's last name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="parentEmail" required data-validation-required-message="Please enter your parent/guardian's email address.">
+                        </div>
+                    </div>
+					<div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="parentPhone" required data-validation-required-message="Please enter your parent/guardian's phone number.">
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">
+						Send Student Information
+					</button>
+                </form>
+            </div>
+			<div style="padding-top: 2em" class="col-md-8">
+				<h3 class="subtitle">Driver's Education:</h3>
+				<ul>
+					<li class="description red">Please have a copy of the PayPal receipt when scheduling your appointment. A verifiable printed PayPal receipt or email is acceptable</li>
+					<li class="description">Drivers Education classes are held every <b>Sunday and Saturday from 8:30 AM to 3:30 PM</b></li>
+					<li class="description">You <b>MUST</b> complete the required four classes (of 30 Driver's Ed. credits) in order to receive your certificate</li>
+					<li class="description">You may either take four consecutive Saturdays (or Sundays), OR you must take a combination of two Saturdays and two Sundays
+					<li class="description">Please call us at <a href="tel:661-635-0654">(661)-635-0654</a> in order to see which classes are being held the upcoming weekend</li>
+				</ul>
+				<h3 class="subtitle">Behind the Wheel Training:</h3>
+				<ul>
+					<li class="description red">Please have a copy of the PayPal receipt when scheduling your appointment. A verifiable printed PayPal receipt or email is acceptable</li>
+					<li class="description">Behind the wheel training consists of 3 2-hour long driving sessions</li>
+					<li class="description">You will be accompanied by a safe and certified Drillers Driving School instructor</li>
+					<li class="description">You must complete <b>at least 6 hours</b> behind the wheel training in order to take your license test.</li>
+					<li class="description">You <b>MUST</b> call us at <a href="tel:661-635-0654">(661)-635-0654</a> in order to schedule your BTW appointment</li>
+				</ul>
+				<h3 class="description red">NOTE: Filling out this form is NOT, in any way, proof of purchase.</h3>
+            </div>
+		</div>
+    </div>
+    <!-- /.container -->
+	<div id="contact-footer" style="bottom: 0em;" class="row footer">
+		<div id="cop1" class="col-lg-12" style="text-align: center;">
+			<p id="copy">Copyright &copy; Drillers Driving School 2016</p>
+		</div>
+	</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/success.js"></script>
+
+</body>
+
+</html>

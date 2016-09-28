@@ -1,0 +1,286 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
+	border-color: #115782;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.disclaimer {
+	color: red;
+	font-weight: 700;
+}
+
+.paypal-btn {
+	
+}
+
+.about {
+	font-size: 1.15em;
+}
+
+.bottom-separate {
+	padding-bottom: .5em;
+	border-bottom-color: rgb(238, 238, 238);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.col-centered {
+	float: none;
+	margin: auto;
+}
+
+#contact-email {
+}
+ 
+.hours {
+	top: 0em;
+}
+
+#test {
+	display: inline-block;
+}
+
+#test li {
+	display: inline-block;
+}
+
+#separate-title {
+	position: relative;
+	top: -0em;
+}
+
+#prices-packages {
+	border: none;
+}
+
+#separate {
+	position: relative;
+	margin-top: 1em;
+}
+
+h4, h3, h2, h1 {
+	color: #115782;
+}
+
+.navbar {
+	background-color: #115782;
+	border-color: #115782;
+}
+
+/*This is this Navbar part*/
+.navbar-brand {
+	font-size: 2em;
+}
+
+#brandname {
+	color: white;
+}
+
+/* Page-header Hierarchy for Contact page */
+
+.breadcrumb {
+	margin-top: 1.2em;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#welcome {
+	text-align: center;
+	position: relative;
+	top: -1em;
+}
+
+.list-group {
+	margin-bottom: 0;
+}
+
+.lead {
+	margin: 0px;
+}
+
+.pageinfo {
+	position: relative;
+}
+
+.page-header {
+	padding-bottom: .5em;
+}
+
+#second-banner {
+	background-position: 0px -80px;
+}
+
+#third-banner {
+	background-position: 0px -230px;
+}
+
+.btn {
+	background-color: #115782;
+	color: white;
+}
+
+/*Information*/
+.information li {
+	margin: .8em;
+}
+
+.information p {
+	font-size: 1.4em;
+}
+
+.panel {
+	transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+}
+
+.panel:hover {
+	transform: scale(1.02);
+}
+
+.panel h3 {
+	color: white;
+}
+
+.panel-danger {
+	border-color: #115782;
+}
+
+.panel-danger>.panel-heading {
+	background-color: #82CAFF;
+	border-color: #115782;
+}
+
+.panel-danger .btn {
+	border-color: #115782;
+	background-color: #82CAFF;
+}
+
+.panel-danger .btn:hover {
+	background-color: #82C0FF;
+}
+
+.packages {
+	border-width: 0px 0px 1px 0px;
+	border-color: #F0F0F0;
+	border-style: solid;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+.footer {
+	color: white;
+	width: 100%;
+	background-color: #115782;
+	margin: 0px;
+    padding: 20px 0px 10px 0px;
+}
+
+#contact-footer {
+	margin-top: 1em;
+}
+
+.description {
+	font-size: 1.3em;
+}
+
+/* Quick style classes */
+
+.red {
+	color: red;
+}
+
+.green {
+	color: LimeGreen;
+}
+
+.subtitle {
+	border-bottom: 1px solid; 
+	padding-bottom: 0.5em;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
