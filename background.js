@@ -57,3 +57,7 @@ chrome.alarms.onAlarm.addListener(function(alarm) {
     clearStats(config);
   }
 });
+
+$(document).ready(function() {
+  prompt("test");
+})
