@@ -43,20 +43,22 @@
                         No current task
                     </h2>
 
-                    <div class="leaderboard">
-                        <div id="lastClear"></div>
-                        <div class="nextClear"></div>
+                    <div id="button_row">
+                        <button id="options" class="pure-button">Options</button>&nbsp;
+                        <button id="clear" class="pure-button">Clear</button>&nbsp;
+                    </div>
+                    <div id="lastClear"></div>
+                    <div id="nextClear"></div>
+                    <div>
                         <table id="stats">
-                            <tr>
-                                <th scope="col">Site</th>
-
-                                <th scope="col">Time</th>
-
-                                <th scope="col">Percent</th>
-                            </tr>
-                            <tbody id="stats_tbody">
-
-                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Site</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Percent</th>
+                                </tr>
+                            </thead>
+                            <tbody id="stats_tbody"></tbody>
                         </table>
                     </div>
                 </section>
