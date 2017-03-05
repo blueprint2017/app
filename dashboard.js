@@ -195,12 +195,6 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("clear").addEventListener("click",
     function() { if (confirm("Are you sure?")) { clearStats(); }});
-  var buttons = document.querySelectorAll("button");
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(e) {
-      _gaq.push(["_trackEvent", e.target.id, "clicked"]);
-    });
-  }
   initialize();
   console.log("initialized");
 });
