@@ -1,10 +1,5 @@
 function summarize() {
     console.log("summarized");
-
-    $.post("http://localhost:5000/test", {"test": "Helloasdfasdf"}, function(data) {
-        console.log("got reply");
-        console.log(data); 
-    })
 }
 
 function startTimer(duration, display) {
@@ -44,4 +39,9 @@ document.getElementById("start-task").addEventListener("click", function(){
   var display = document.querySelector("#remaining");
 
   startTimer(parsedLength, display);
+
+  $.post("http://localhost:5000/test", {"test": "Helloasdfasdf"}, function(data) {
+      console.log("got reply");
+      console.log(data);
+  })
 });
