@@ -1,0 +1,20 @@
+{
+  "name": "Knowtime",
+  "version": "1.0",
+  "description": "Chrome extension that tracks browsing activity, matches with Pomodoro cycles, and visualizes insights from data.",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["config.js", "sites.js", "tracker.js", "background.js"]
+  },
+  "permissions": [
+    "alarms",
+    "idle",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Knowtime",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

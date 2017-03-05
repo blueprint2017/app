@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 2.5rem;
+    height: 100%;
+}
+section:last-child {
+    border-right: none;
+}
+
+#timer {
+    display: none;
+    text-align: center;
+}
+
+h2 {
+    line-height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.summary {
+    background-color: #eee;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1.75rem;
+    border-radius: 1rem;
+}

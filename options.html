@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Data Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.skeleton.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <section class="one-third column">
+                    <article class="current-task">
+                        <h1>Current Task</h1>
+
+                        <label for="task-name">What are you working on?</label>
+                        <input class="u-full-width" type="text" placeholder="Coding, browsing Reddit, etc." id="task-name">
+
+                        <div class="row">
+                            <div class="one-half column">
+                                <label for="work-length">Work for</label>
+                                <input class="u-full-width" type="text" placeholder="25 minutes" id="work-length">
+                            </div>
+
+                            <div class="one-half column">
+                                <label for="break-length">Break for</label>
+                                <input class="u-full-width" type="text" placeholder="5 minutes" id="break-length">
+                            </div>
+                        </div>
+
+                        <input id="start-task" class="button-primary" type="submit" value="start task">
+
+                        <div id="timer">
+                            <h2 id="remaining"></h2> minutes left
+                            until <h2 id="next-length"></h2> minute break
+
+                            <span id="time"></span>
+                        </div>
+                    </article>
+
+                    <h2 id="current-task">
+                        No current task
+                    </h2>
+
+                    <div class="leaderboard">
+                        <div id="lastClear"></div>
+                        <div class="nextClear"></div>
+                        <table id="stats">
+                            <tr>
+                                <th scope="col">Site</th>
+
+                                <th scope="col">Time</th>
+
+                                <th scope="col">Percent</th>
+                            </tr>
+                            <tbody id="stats_tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="one-third column">
+                    <h1>Summaries</h1>
+                    <article class="summary">
+                      <h3>Task Title</h3>
+                      <p>Worked 25 minutes, break 5 minutes</p>
+                    </article>
+                </section>
+
+                <section class="one-third column">
+                    <h1>Leaderboard</h1>
+                </section>
+            </div>
+        </div>
+
+        <script src="config.js"></script>
+        <script src="sites.js"></script>
+        <script src="popup.js"></script>
+        <script src="options.js"></script>
+    </body>
+</html>
