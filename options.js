@@ -1,5 +1,10 @@
 function summarize() {
+    console.log("summarized");
 
+    $.post("http://localhost:5000/test", {"test": "Helloasdfasdf"}, function(data) {
+        console.log("got reply");
+        console.log(data); 
+    })
 }
 
 function startTimer(duration, display) {
@@ -16,6 +21,7 @@ function startTimer(duration, display) {
 
       if (--timer < 0) { // timer = timer - 1
           clearInterval(timerID);
+          summarize();
       }
   }, 1000);
 }
