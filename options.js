@@ -2,7 +2,7 @@ $(document).ready(function() {
     var pieData = [
         {
             value: 35,
-            color: "#3f9f3f";
+            color: "#3f9f3f"
         },
         {
             value: 100-35,
