@@ -1,25 +1,6 @@
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-45267314-2']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = 'https://ssl.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
 var config = new Config();
 var gsites = new Sites(config);
 
-function addIgnoredSite(new_site) {
-  return function() {
-    chrome.extension.sendRequest(
-       {action: "addIgnoredSite", site: new_site},
-       function(response) {
-         initialize();
-       });
-  };
-}
 
 function secondsToString(seconds) {
   if (config.timeDisplayFormat == Config.timeDisplayFormatEnum.MINUTES) {
@@ -79,6 +60,8 @@ function addLocalDisplay() {
   cell.innerHTML = "<b>Total</b>";
   row.appendChild(cell);
   cell = document.createElement("td");
+  //TOTAL TIME GOES HERE.
+
   cell.appendChild(document.createTextNode(secondsToString(totalTime)));
   row.appendChild(cell);
   cell = document.createElement("td");
@@ -86,7 +69,6 @@ function addLocalDisplay() {
   row.appendChild(cell);
   row = setPercentageBG(row,0);
   tbody.appendChild(row);
-
   var maxTime = 0;
   if (sortedSites.length) {
     maxTime = sites[sortedSites[0][0]];
@@ -192,22 +174,7 @@ function initialize() {
   }
 }
 
-chrome.runtime.onStartup.addListener(
-  function(request, sender, sendResponse) {
-    console.logo(sender.tab ? 
-        "from a content script:" + sender.tab.url :
-        "from the extension");
-    if(request.greeting == "hello") {
-      sendResponse({farewell: "goodbye"});
-    }
-  }
-);
-
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("clear").addEventListener("click",
-    function() { if (confirm("Are you sure?")) { clearStats(); }});
-  document.getElementById("options").addEventListener("click",
-      function() { chrome.runtime.openOptionsPage(); });
   var buttons = document.querySelectorAll("button");
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function(e) {

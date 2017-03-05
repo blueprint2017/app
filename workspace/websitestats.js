@@ -192,17 +192,6 @@ function initialize() {
   }
 }
 
-chrome.runtime.onStartup.addListener(
-  function(request, sender, sendResponse) {
-    console.logo(sender.tab ? 
-        "from a content script:" + sender.tab.url :
-        "from the extension");
-    if(request.greeting == "hello") {
-      sendResponse({farewell: "goodbye"});
-    }
-  }
-);
-
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("clear").addEventListener("click",
     function() { if (confirm("Are you sure?")) { clearStats(); }});
