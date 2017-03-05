@@ -12,6 +12,7 @@
             <header class="row">
                 <h1>Welcome to Knowtime.</h1>
                 <h2>What's your name?</h2>
+                <input id="name" class="u-full-width" type="text">
             </header>
             <div class="row">
                 <section class="one-third column">
@@ -38,14 +39,9 @@
                         <div id="timer">
                             <h2 id="remaining"></h2> minutes left
                             until <h2 id="next-length"></h2> minute break
-
-                            <span id="time"></span>
+                            from <span id="current-task"></span>
                         </div>
                     </article>
-
-                    <h2 id="current-task">
-                        No current task
-                    </h2>
 
                     <div id="button_row">
                         <button id="clear" class="pure-button">Clear</button>&nbsp;
@@ -68,6 +64,7 @@
 
                 <section class="one-third column">
                     <h1>Summaries</h1>
+
                     <canvas id="productivity-chart"></canvas>
                 </section>
 
