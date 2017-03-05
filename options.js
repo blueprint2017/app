@@ -1,18 +1,3 @@
-$(document).ready(function() {
-    var pieData = [
-        {
-            value: 35,
-            color: "#3f9f3f"
-        },
-        {
-            value: 100-35,
-            color: "#222"
-        }
-    ];
-    
-    var myPie = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(pieData,{percentageInnerCountout : 50});
-)};
-
 function postData() {
     $.ajax({
         type: "POST",
