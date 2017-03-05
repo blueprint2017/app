@@ -14,7 +14,7 @@ function postData() {
 }
 
 function summarize() {
-    document.getElementById("leaderboard").innerHTML="summarizing";
+    document.getElementById("leaderboard").innerHTML=JSON.stringify(localStorage.sites);
 }
 
 function startTimer(duration, display) {
