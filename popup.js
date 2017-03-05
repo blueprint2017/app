@@ -208,11 +208,5 @@ document.addEventListener("DOMContentLoaded", function() {
     function() { if (confirm("Are you sure?")) { clearStats(); }});
   document.getElementById("options").addEventListener("click",
       function() { chrome.runtime.openOptionsPage(); });
-  var buttons = document.querySelectorAll("button");
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(e) {
-      _gaq.push(["_trackEvent", e.target.id, "clicked"]);
-    });
-  }
   initialize();
 });

@@ -1,7 +1,6 @@
 var config = new Config();
 var gsites = new Sites(config);
 
-<<<<<<< HEAD
 function addIgnoredSite(new_site) {
   return function() {
     chrome.extension.sendRequest(
@@ -11,8 +10,6 @@ function addIgnoredSite(new_site) {
        });
   };
 }
-=======
->>>>>>> 02357d317cb6de8afe07a817cc31d2fe4567493a
 
 function secondsToString(seconds) {
   if (config.timeDisplayFormat == Config.timeDisplayFormatEnum.MINUTES) {
@@ -72,11 +69,8 @@ function addLocalDisplay() {
   cell.innerHTML = "<b>Total</b>";
   row.appendChild(cell);
   cell = document.createElement("td");
-<<<<<<< HEAD
-=======
   //TOTAL TIME GOES HERE.
 
->>>>>>> 02357d317cb6de8afe07a817cc31d2fe4567493a
   cell.appendChild(document.createTextNode(secondsToString(totalTime)));
   row.appendChild(cell);
   cell = document.createElement("td");
@@ -84,10 +78,6 @@ function addLocalDisplay() {
   row.appendChild(cell);
   row = setPercentageBG(row,0);
   tbody.appendChild(row);
-<<<<<<< HEAD
-
-=======
->>>>>>> 02357d317cb6de8afe07a817cc31d2fe4567493a
   var maxTime = 0;
   if (sortedSites.length) {
     maxTime = sites[sortedSites[0][0]];
@@ -97,12 +87,9 @@ function addLocalDisplay() {
       index++ ){
    var site = sortedSites[index][0];
    row = document.createElement("tr");
-<<<<<<< HEAD
 
    console.log("creating elements");
 
-=======
->>>>>>> 02357d317cb6de8afe07a817cc31d2fe4567493a
    cell = document.createElement("td");
    var removeImage = document.createElement("img");
    removeImage.src = chrome.extension.getURL("images/remove.png");
@@ -200,20 +187,8 @@ function initialize() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-<<<<<<< HEAD
   document.getElementById("clear").addEventListener("click",
     function() { if (confirm("Are you sure?")) { clearStats(); }});
-=======
->>>>>>> 02357d317cb6de8afe07a817cc31d2fe4567493a
-  var buttons = document.querySelectorAll("button");
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(e) {
-      _gaq.push(["_trackEvent", e.target.id, "clicked"]);
-    });
-  }
   initialize();
-<<<<<<< HEAD
   console.log("initialized");
-=======
->>>>>>> 02357d317cb6de8afe07a817cc31d2fe4567493a
 });
