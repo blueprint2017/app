@@ -1,5 +1,5 @@
 function summarize() {
-    console.log("summarized");
+
 }
 
 function startTimer(duration, display) {
@@ -16,7 +16,6 @@ function startTimer(duration, display) {
 
       if (--timer < 0) { // timer = timer - 1
           clearInterval(timerID);
-          summarize();
       }
   }, 1000);
 }
@@ -39,9 +38,4 @@ document.getElementById("start-task").addEventListener("click", function(){
   var display = document.querySelector("#remaining");
 
   startTimer(parsedLength, display);
-  
-  $.post("http://localhost:5000/test", {"test": "Helloasdfasdf"}, function(data) {
-      console.log("got reply");
-      console.log(data);
-  })
 });

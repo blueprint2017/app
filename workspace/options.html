@@ -3,8 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Data Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="css/normalize.skeleton.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/skeleton.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/options.css">
+        <script src="config.js"></script>
+        <script src="sites.js"></script>
+        <script src="popup.js"></script>
+        <script src="options.js"></script>
     </head>
 
     <body>
@@ -43,21 +49,20 @@
                         No current task
                     </h2>
 
-                    <div id="button_row">
-                        <button id="clear" class="pure-button">Clear</button>&nbsp;
-                    </div>
-                    <div id="lastClear"></div>
-                    <div id="nextClear"></div>
-                    <div>
+                    <div class="leaderboard">
+                        <div id="lastClear"></div>
+                        <div class="nextClear"></div>
                         <table id="stats">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Site</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Percent</th>
-                                </tr>
-                            </thead>
-                            <tbody id="stats_tbody"></tbody>
+                            <tr>
+                                <th scope="col">Site</th>
+
+                                <th scope="col">Time</th>
+
+                                <th scope="col">Percent</th>
+                            </tr>
+                            <tbody id="stats_tbody">
+
+                            </tbody>
                         </table>
                     </div>
                 </section>
@@ -75,11 +80,5 @@
                 </section>
             </div>
         </div>
-
-        <script src="config.js"></script>
-        <script src="sites.js"></script>
-        <script src="dashboard.js"></script>
-        <script src="jquery.min.js"></script>
-        <script src="options.js"></script>
     </body>
 </html>
