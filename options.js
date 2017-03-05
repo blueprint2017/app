@@ -40,16 +40,8 @@ document.getElementById("start-task").addEventListener("click", function(){
 
   startTimer(parsedLength, display);
 
-  /* $.post("http://localhost:5000/test", {"test": "Helloasdfasdf"}, function(data) {
+  $.post("http://localhost:5000/test", {"test": "Helloasdfasdf"}, function(data) {
       console.log("got reply");
       console.log(data);
-  }) */
-
-  $.ajax({
-    url: "http://localhost:5000/test",
-    type: "POST",
-    data: JSON.stringify({"test": "Helloasdfasdf"}),
-    dataType: "json",
-    contentType: "application/json"
   })
 });
