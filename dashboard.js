@@ -186,6 +186,13 @@ function initialize() {
   }
 }
 
+$(document).ready(function() {
+  var name;
+  while(name == null) {
+    name = prompt("Please enter your name: ", "Elon Musk");
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("clear").addEventListener("click",
     function() { if (confirm("Are you sure?")) { clearStats(); }});
