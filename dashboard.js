@@ -185,11 +185,14 @@ function initialize() {
   }
 }
 
+//Prompt for and store system username
 $(document).ready(function() {
-  var name;
+  var name = localStorage.getItem("username");
   while(name == null) {
     name = prompt("Please enter your name: ", "Elon Musk");
   }
+  localStorage.setItem("username", name);
+  console.log(localStorage.getItem("username"));
 });
 
 document.addEventListener("DOMContentLoaded", function() {

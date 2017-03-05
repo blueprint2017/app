@@ -9,6 +9,7 @@
   "permissions": [
     "alarms",
     "idle",
+    "identity",
     "tabs"
   ],
   "browser_action": {
